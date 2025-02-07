@@ -1,5 +1,8 @@
 import socketserver
 import json
+import grpc
+import admin_pb2_grpc
+import admin_pb2
 
 class MyTCPHandler(socketserver.StreamRequestHandler):
 
@@ -15,11 +18,15 @@ class MyTCPHandler(socketserver.StreamRequestHandler):
 
         action = request_obj["action"]
         print(f'action: {action}')
+        response = None
 
         if action == 'participer':
-            check_valid_login(request_obj["login"])
-
-        self.wfile.write(b'do nothing')
+            login = request_obj["login"]
+            with grpc.insecure_channel('localhost:50051') as channel:
+                stub = admin_pb2_grpc.AdminStub(channel)
+                status = stub.CheckValidLogin(admin_pb2.Login(login = login))
+                response = status.status
+        self.wfile.write(f'{response}'.encode('utf-8'))
 
 
 if __name__ == "__main__":

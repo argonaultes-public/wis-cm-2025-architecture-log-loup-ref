@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+service Admin {
+    rpc CheckValidLogin(Login) returns (Status) {}
+}
+
+message Login {
+    required string login = 1;
+}
+
+message Status {
+    required bool status = 1;
+}
+

@@ -116,3 +116,226 @@ En PHP
 ### MCD
 
 ![](./loupvillageois-mcd.drawio.png)
+
+## Définition protocoles de communication
+
+### Client TCP -> Interface TCP
+
+Demander participation au jeu
+
+Requête
+
+```json
+{
+  "action": "participer",
+  "login": "joueur1"
+}
+```
+
+Réponse
+
+```json
+{
+  "message": "ok" //ko
+}
+```
+
+
+Envoyer un ordre de déplacement
+
+Exemple message de la requête 
+
+```json
+{
+  "action": "déplacement",
+  "login": "joueur1",
+  "destination": "haut" // bas, gauche, droite
+}
+```
+
+Exemple message de la réponse
+
+```json
+{
+  "message": "OK" // KO
+}
+```
+
+
+Afficher les objets autour de moi
+
+
+Exemple message de la requête 
+
+```json
+{
+  "action": "afficher",
+  "login": "joueur1"
+}
+
+
+Exemple message de la réponse
+
+```json
+{
+  "grid": [
+    ['.', '|', '_'],
+    [' ', 'L', 'V'],
+    ['J']
+  ],
+  "role": "L" // "V"
+}
+```
+'.' : emplacement vide disponible
+'|' : mur vertical
+'_': mur horizontal
+' ' : en dehors de la carte
+'L' : emplacement occupé par un loup pendant le tour
+'V' : emplacement occupé par un villageois pendant le tour
+'J' : emplacement occupé par notre personnage
+
+Afficher l'état de santé du joueur
+
+Requête
+
+```json
+{
+  "action": "santé",
+  "login": "joueur1"
+}
+```
+
+Réponse
+
+```json
+{
+  "message": "En jeu" // Perdu 
+}
+```
+
+Afficher le n° du tour en cours et le temps restant
+
+Requête
+
+```json
+{
+  "action": "tour",
+  "login": "joueur1"
+}
+```
+
+Réponse
+
+```json
+{
+  "tour": 8,
+  "temps_restant": 180 // secondes
+}
+```
+
+
+### Admin HTTP -> Interface HTTP
+
+Créer une partie
+
+Requête
+
+```json
+{
+  "action": "creer",
+  "nb_de_tours_max": 10,
+  "temps_max_du_tour": 9,
+  "taille_carte": {
+      "largeur": 10,
+      "longueur": 12
+  },
+  "effectifs": {
+    "loups": {
+      "min": 1,
+      "max": 2
+    },
+    "villageois": {
+      "min": 1,
+      "max": 12
+    }
+  }
+}
+```
+
+Réponse
+
+```json
+{
+  "id_partie": 1
+}
+```
+
+Démarrer une partie
+
+
+Requête
+
+```json
+{
+  "id_partie": 1,
+  "action": "démarrer"
+}
+```
+
+
+Réponse
+
+```json
+{
+  "message": "OK" // KO
+}
+```
+
+Voir toute la carte
+
+
+Requête
+
+```json
+{
+  "action": "carte",
+  "id_partie": 1
+}
+```
+
+Réponse
+
+```json
+```json
+{
+  "grid": [
+    ['.', '|', '_'],
+    [' ', 'L', 'V'],
+    ['J']
+  ],
+  "role": "L" // "V"
+}
+```
+
+'.' : emplacement vide disponible
+'|' : mur vertical
+'_': mur horizontal
+' ' : en dehors de la carte
+'L' : emplacement occupé par un loup pendant le tour
+'V' : emplacement occupé par un villageois pendant le tour
+
+### Interface TCP -> Tour
+
+```python
+def enregistrer_deplacement(id_joueur, destination):
+  pass
+```
+
+### Interface TCP -> Carte
+
+
+```python
+def 
+```
+
+### Interface HTTP -> Administration
