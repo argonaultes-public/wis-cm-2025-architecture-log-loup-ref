@@ -339,3 +339,11 @@ def
 ```
 
 ### Interface HTTP -> Administration
+
+## Commandes utiles
+
+Générer les fichiers Python à partir du fichier proto
+
+```bash
+python -m grpc_tools.protoc -I. --python_out=. --pyi_out=. --grpc_python_out=. admin.proto
+```

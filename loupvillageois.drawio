@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.9 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="26.0.9" pages="3">
   <diagram name="Page-1" id="MMivJaxS8k0B4t-lX5Ob">
-    <mxGraphModel dx="1816" dy="1852" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2261" dy="2159" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -101,7 +101,7 @@
         <mxCell id="rxoxfwZekV19yTclHRhA-10" value="Joueur 1 (client)&lt;div&gt;Javascript&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="-270" y="360" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rxoxfwZekV19yTclHRhA-12" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rxoxfwZekV19yTclHRhA-11" target="rxoxfwZekV19yTclHRhA-1">
+        <mxCell id="rxoxfwZekV19yTclHRhA-12" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=5;" edge="1" parent="1" source="rxoxfwZekV19yTclHRhA-11" target="rxoxfwZekV19yTclHRhA-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="rxoxfwZekV19yTclHRhA-28" value="TCP" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rxoxfwZekV19yTclHRhA-12">
@@ -109,8 +109,8 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rxoxfwZekV19yTclHRhA-11" value="Joueur 1 (client)&lt;div&gt;Python&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-270" y="570" width="120" height="60" as="geometry" />
+        <mxCell id="rxoxfwZekV19yTclHRhA-11" value="Joueur 1 (client)&lt;div&gt;Python&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=5;" vertex="1" parent="1">
+          <mxGeometry x="-310" y="620" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rxoxfwZekV19yTclHRhA-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.203;entryY=1.003;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="rxoxfwZekV19yTclHRhA-31" target="rxoxfwZekV19yTclHRhA-33">
           <mxGeometry relative="1" as="geometry">
@@ -133,7 +133,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="rxoxfwZekV19yTclHRhA-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="rxoxfwZekV19yTclHRhA-31" target="rxoxfwZekV19yTclHRhA-42">
+        <mxCell id="rxoxfwZekV19yTclHRhA-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=6;" edge="1" parent="1" source="rxoxfwZekV19yTclHRhA-31" target="rxoxfwZekV19yTclHRhA-42">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="170" y="520" />
@@ -145,7 +145,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rxoxfwZekV19yTclHRhA-31" value="Interface TCP" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+        <mxCell id="rxoxfwZekV19yTclHRhA-31" value="Interface TCP" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=7;" vertex="1" parent="1">
           <mxGeometry x="210" y="490" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rxoxfwZekV19yTclHRhA-52" value="gRPC" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="rxoxfwZekV19yTclHRhA-32" target="rxoxfwZekV19yTclHRhA-49">
@@ -213,7 +213,7 @@
         <mxCell id="rxoxfwZekV19yTclHRhA-49" value="Gestionnaire de carte (position du joueur)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="540" y="310" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="BZ-JRiha1t7T2JPGDnFn-1" value="&lt;ul&gt;&lt;li&gt;lire un ordre de déplacement&lt;/li&gt;&lt;li&gt;afficher les objets du joueur&lt;/li&gt;&lt;li&gt;afficher l&#39;état de santé du joueur&lt;/li&gt;&lt;li&gt;afficher le n° de tour&lt;/li&gt;&lt;/ul&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;" vertex="1" parent="1">
+        <mxCell id="BZ-JRiha1t7T2JPGDnFn-1" value="&lt;ul&gt;&lt;li&gt;lire un ordre de déplacement&lt;/li&gt;&lt;li&gt;afficher les objets autour du joueur&lt;/li&gt;&lt;li&gt;afficher l&#39;état de santé du joueur&lt;/li&gt;&lt;li&gt;afficher le n° de tour&lt;/li&gt;&lt;/ul&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;" vertex="1" parent="1">
           <mxGeometry x="640" y="760" width="210" height="160" as="geometry" />
         </mxCell>
         <mxCell id="BZ-JRiha1t7T2JPGDnFn-2" value="&lt;ul&gt;&lt;li&gt;fournir les positions des joueurs et leur vision (prise en compte du brouillard)&lt;/li&gt;&lt;li&gt;déplacer les joueurs à la fin du tour&lt;/li&gt;&lt;li&gt;résoudre les conflits&lt;/li&gt;&lt;/ul&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;" vertex="1" parent="1">
@@ -237,6 +237,15 @@
         </mxCell>
         <mxCell id="BZ-JRiha1t7T2JPGDnFn-6" value="&lt;ul&gt;&lt;li&gt;lire un ordre de création de partie&lt;/li&gt;&lt;li&gt;démarrer une partie&lt;/li&gt;&lt;li&gt;voir toute la carte&lt;/li&gt;&lt;/ul&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;" vertex="1" parent="1">
           <mxGeometry x="920" y="650" width="210" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="tAcuB_KtvAKPCCuNAqoE-1" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="200" y="230" width="40" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="tAcuB_KtvAKPCCuNAqoE-2" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="480" y="260" width="40" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="tAcuB_KtvAKPCCuNAqoE-3" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="670" y="265" width="40" height="45" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
